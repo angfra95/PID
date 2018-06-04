@@ -25,13 +25,13 @@ Code by:
 * STarrio
 * angfra95
 
-Given an image without depth of field, we've designed an algorithm inspired in the following papers that generates a visual effect like bokeh filter. This filter makes a blur based on the distance. This algorithm has two steps:
+Given an image without depth of field, we've designed an algorithm inspired in the following papers, that generates a visual effect like bokeh filter. This filter makes a blur based on the distance. This algorithm has two steps:
 * First, we've separated the foreground from the background to estimate the depth of field relationships between the different elements of the image.
 * Secondly, with that approximation, we apply an algorithm which simulates the bokeh filter.
 
-Based on the papers:
+Based on these papers:
 * http://www.sciencedirect.com/science/article/pii/S0262885616301238
 * https://otik.uk.zcu.cz/bitstream/11025/11225/1/Cyril.pdf
 
-Based on the code:
+Based on this code:
 * Meanshift Algorithm (mattnedrich): https://github.com/mattnedrich/MeanShift_py
